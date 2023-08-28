@@ -1,0 +1,18 @@
+{
+    "PermissionForm": {},
+    "Dashboard": {},
+    "Navigation": {},
+    "ContactForm": {},
+    "CompanyForm": {},
+    "ProductForm": {},
+    "OrderForm": {},
+    "InvoiceForm": {},
+    "WarrantyForm": {},
+    "ClaimForm": {},
+    "GroupForm": {},
+    "BillingTemplateForm": {},
+    "DiscountForm": {},
+    "SettingForm": {},
+    "TaskForm": {},
+    "ControlListForm": {}
+}

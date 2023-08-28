@@ -1,0 +1,413 @@
+{
+    "PermissionForm": {
+        "text": "Permission Form",
+        "id": "PermissionForm",
+        "type": "checkbox",
+        "field": {
+            "PermissionForm": "Permission Form",
+            "ContactForm": "Contact Form",
+            "Dashboard": "Dashboard",
+            "Navigation": "Navigation",
+            "TaskForm": "Task Form",
+            "ClaimForm": "Claim Form",
+            "GroupForm": "Group Form",
+            "OrderForm": "Order Form",
+            "CompanyForm": "Company Form",
+            "InvoiceForm": "Invoice Form",
+            "ProductForm": "Product Form",
+            "SettingForm": "Setting Form",
+            "DiscountForm": "Discount Form",
+            "WarrantyForm": "Warranty Form",
+            "BillingTemplateForm": "Billing Template Form",
+            "ControlListForm": "Control List Form"
+        },
+        "key": {
+            "edit": "Edit"
+        }
+    },
+    "Dashboard": {
+        "text": "Dashboard",
+        "id": "Dashboard",
+        "type": "checkbox",
+        "field": {
+            "task": "Task",
+            "group": "Group",
+            "order": "Order",
+            "contact": "Contact",
+            "invoice": "Invoice",
+            "claim": "Claim",
+            "warranty": "Warranty"
+        },
+        "key": {
+            "show": "Show"
+        }
+    },
+    "Navigation": {
+        "text": "Navigation",
+        "id": "Navigation",
+        "type": "checkboxLevel",
+        "field": {},
+        "key": {
+            "show": "Show"
+        }
+    },
+    "ContactForm": {
+        "text": "Contact Form",
+        "id": "ContactForm",
+        "type": "select",
+        "field": {
+            "first_name": "First Name",
+            "middle_name": "Middle Name",
+            "last_name": "Last Name",
+            "company_name": "Company",
+            "primary_email": "Primary Email",
+            "contact_salesman_id" : "Representation",
+            "primary_phone": "Primary Phone",
+            "primary_website": "Primary Website",
+            "primary_street_address1": "Street Address 1",
+            "primary_street_address2": "Street Address 2",
+            "primary_city": "City",
+            "primary_state": "State",
+            "primary_postal_code": "Postal Code",
+            "contact_tags": "Tags",
+            "contact_type": "Types",
+            "contact_notes": "Notes",
+            "notes": "Table Note",
+            "user_name": "Username",
+            "password": "Password",
+            "documents": "Document Table",
+            "track_mails": "Track Mails",
+            "contact_inactive": "Inactive",
+            "btnBackContact": "Button Go Back",
+            "btnSubmitContact": "Button Submit",
+            "viewPrivateNote": "View Internal Office Note"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "CompanyForm": {
+        "text": "Company Form",
+        "id": "CompanyForm",
+        "type": "select",
+        "field": {
+            "name": "Name",
+            "company_salesman_id" : "Representation",
+            "email": "Email",
+            "phone": "Phone",
+            "fax": "Fax",
+            "www": "Website",
+            "city": "City",
+            "state": "State",
+            "postal_code": "Postal Code",
+            "address1": "Address 1",
+            "address2": "Address 2",
+            "type": "Company Type",
+            "tag": "Company Tag",
+            "viewPrivateNote": "View Internal Office Note"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "ProductForm": {
+        "text": "Product Form",
+        "id": "ProductForm",
+        "type": "select",
+        "field": {
+            "SKU": "SKU",
+            "prod_name": "Product Name",
+            "prod_desc": "Description",
+            "prod_desc_short": "Short Description",
+            "prod_type": "Product Type",
+            "prod_class": "Product Class",
+            "prod_photo": "Photo",
+            "prod_cost": "Cost",
+            "prod_price": "Price",
+            "prod_width": "Width",
+            "prod_height": "Height",
+            "prod_length": "Length",
+            "prod_weight": "Weight",
+            "product_tags": "Tags",
+            "product_notes": "Note",
+            "prod_visible": "Visible",
+            "prod_inactive": "Inactive",
+            "product_taxable": "Taxable",
+            "prod_internal_visible": "Internal Visible",
+            "btnBackProduct": "Button Back",
+            "btnSubmitProduct": "Button Submit"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "OrderForm": {
+        "text": "Order Form",
+        "id": "OrderForm",
+        "type": "select",
+        "field": {
+            "order_title": "Order Title",
+            "bill_to": "Billed To",
+            "salesperson": "Salesperson",
+            "discount_code": "Discount Code",
+            "subscription": "Subscription",
+            "note": "Order Note",
+            "notes": "Table Note",
+            "products_ordered": "Table Product Order",
+            "btnBackOrder": "Button Back",
+            "btnSubmitOrder": "Button Submit",
+            "btnForwardOrderToWarranty": "Button Forward From Order To Warranty",
+            "viewPrivateNote": "View Internal Office Note"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "InvoiceForm": {
+        "text": "Invoice Form",
+        "id": "InvoiceForm",
+        "type": "select",
+        "field": {
+            "customer": "Customer",
+            "order_id": "Order",
+            "invoiceid": "Invoice Number",
+            "salesperson": "Salesperson",
+            "ledger": "Ledger",
+            "notes": "Table Note",
+            "btnBackInvoice": "Button Back",
+            "btnSubmitInvoice": "Button Submit",
+            "viewPrivateNote": "View Internal Office Note"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "WarrantyForm": {
+        "text": "Warranty Form",
+        "id": "WarrantyForm",
+        "type": "select",
+        "field": {
+            "warranty_city": "City",
+            "warranty_state": "State",
+            "warranty_postal_code": "Postal Code",
+            "warranty_address1": "Address 1",
+            "warranty_address2": "Address 2",
+            "warranty_order_id": "Order",
+            "warranty_buyer_id": "Buyer",
+            "warranty_salesman_id": "Salesperson",
+            "warranty_buyer_agent_id": "Buyer Agent",
+            "warranty_seller_agent_id": "Seller Agent",
+            "warranty_escrow_id": "Escrow",
+            "warranty_mortgage_id": "Mortgage",
+            "warranty_aLaCarte": "Ala Carte Product",
+            "warranty_charity_of_choice": "Charity of Choice",
+            "warranty_end_date": "End Date",
+            "warranty_start_date": "Start Date",
+            "warranty_closing_date": "Closing Date",
+            "warranty_subscription": "Subscription",
+            "warranty_discount_type": "Discount",
+            "warranty_contract_amount": "Contract Amount",
+            "warranty_eagle": "Eagle",
+            "warranty_renewal": "Renewal",
+            "warranty_inactive": "Inactive",
+            "btnBackWarranty": "Button Back",
+            "btnSubmitWarranty": "Button Submit",
+            "viewPrivateNote": "View Internal Office Note"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "ClaimForm": {
+        "text": "Claim Form",
+        "id": "ClaimForm",
+        "type": "select",
+        "field": {
+            "customer": "Customer",
+            "warranty_ID": "Warranty",
+            "claim_assign": "Assigned To",
+            "note": "Description",
+            "start_date": "Start Date",
+            "end_date": "End Date",
+            "status": "Status",
+            "paid": "Paid",
+            "UID": "Vendor",
+            "notes": "Table Note",
+            "claim_limit": "Table Claim Limit",
+            "claim_transaction": "Table Transaction",
+            "create_transaction": "Create Transaction",
+            "control_claim_limit": "Managed Claim Limit",
+            "accountant_approved_pay": "Accountant Confirm Pay",
+            "btnBackClaim": "Button Back",
+            "btnSubmitClaim": "Button Submit",
+            "viewPrivateNote": "View Internal Office Note"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "GroupForm": {
+        "text": "Group Form",
+        "id": "GroupForm",
+        "type": "select",
+        "field": {
+            "department": "Unit",
+            "role": "Role",
+            "group_name": "Group Name",
+            "users": "Users",
+            "parent_id": "Supervisor",
+            "parent_group": "Parent Group",
+            "btnSubmitGroup": "Button Submit"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "BillingTemplateForm": {
+        "text": "Billing Template Form",
+        "id": "BillingTemplateForm",
+        "type": "select",
+        "field": {
+            "name": "Template Name",
+            "paymentPeriod": "Subscription Plan (month)",
+            "billingCircleEvery": "Billing Circle Every",
+            "dayOfMonth": "Day of Month",
+            "betweenToPay": "Next payment (number of days)",
+            "optionPayingLater": "Skip first month",
+            "initiedFee": "Initial Fee",
+            "processingFee": "Processing Fee",
+            "status": "Status",
+            "btnBackBilling": "Button Back",
+            "btnSubmitBilling": "Button Submit",
+            "table_billing_template_wrapper": "Table Billing Template List"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "DiscountForm": {
+        "text": "Discount Form",
+        "id": "DiscountForm",
+        "type": "select",
+        "field": {
+            "discount_name": "Name",
+            "apply_to": "Apply To",
+            "discount_number": "Discount Amount",
+            "discount_type": "Discount Type",
+            "start_date": "Start Date",
+            "stop_date": "Stop Date",
+            "nerver_expired": "Never Expired",
+            "active": "Active",
+            "excludesive_offer": "Excludesive offer",
+            "btnBackDiscount": "Button Back",
+            "btnSubmitDiscount": "Button Submit"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "SettingForm": {
+        "text": "Setting Form",
+        "id": "SettingForm",
+        "type": "select",
+        "field": {
+            "page_title": "Page Title",
+            "gps": "Location",
+            "logo_ico": "Logo Ico In Page Title",
+            "logo": "Logo Website",
+            "color_site": "Website Color",
+            "background": "Background Color",
+            "navigation": "Navigation Text",
+            "top_menu_color": "Top Menu Color",
+            "footer_info": "Footer Info",
+            "company_fax": "Company Fax",
+            "table_phone": "Phone",
+            "company_name": "Company Name",
+            "company_email": "Company Email",
+            "company_city": "Company City",
+            "company_state": "State",
+            "company_postal_code": "Zipcode",
+            "company_address": "Company Address 1",
+            "company_address2": "Company Address 2",
+            "claim_start_fee": "Claim Start Fee",
+            "claim_status": "Claim Status",
+            "btnBackSetting": "Button Back",
+            "btnSubmitSetting": "Button Submit"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "TaskForm": {
+        "text": "Task Form",
+        "id": "TaskForm",
+        "type": "select",
+        "field": {
+            "taskName": "Task Name",
+            "actionset": "Action Set",
+            "assign_id": "Assigned To",
+            "customer_id": "Customer",
+            "time": "Time",
+            "alert": "Alert",
+            "urgent": "Urgent",
+            "status": "Status",
+            "content": "Content",
+            "dueDate": "Due Date",
+            "doneDate": "Done Date"
+        },
+        "key": {
+            "show": "Show",
+            "add": "Add",
+            "edit": "Edit",
+            "addEdit": "Add & Edit"
+        }
+    },
+    "ControlListForm": {
+        "text": "Control List Form",
+        "id": "ControlListForm",
+        "type": "select",
+        "field": {
+            "orderlist": "Order List",
+            "orderreport": "Order Report"
+        },
+        "key": {
+            "login_only": "Login Only",
+            "group": "Group",
+            "child_group": "Child Group",
+            "all": "All"
+        }
+    }
+}

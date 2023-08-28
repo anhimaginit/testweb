@@ -1,0 +1,68 @@
+[
+   {
+      "id": "claim",
+      "children": [
+         {
+            "id": "claim-form.contact.php"
+         },
+         {
+            "id": "claim-form.warranty.php"
+         },
+         {
+            "id": "claim.php"
+         },
+         {
+            "id": "claim-form.task.php"
+         },
+         {
+            "id": "contact-note.php"
+         }
+      ]
+   },
+   {
+      "id": "contact",
+      "children": [
+         {
+            "id": "contact-form.php"
+         },
+         {
+            "id": "admin-claim-form2.php"
+         },
+         {
+            "id": "contact-note.php"
+         }
+      ]
+   },
+   {
+      "id": "product",
+      "children": [
+         {
+            "id": "product-form.php"
+         }
+      ]
+   },
+   {
+      "id": "role",
+      "children": [
+         {
+            "id": "role-form.php"
+         }
+      ]
+   },
+   {
+      "id": "order",
+      "children": [
+         {
+            "id": "order-form.php"
+         }
+      ]
+   },
+   {
+      "id": "invoice",
+      "children": [
+         {
+            "id": "invoice-form.php"
+         }
+      ]
+   }
+]

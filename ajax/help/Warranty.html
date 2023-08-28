@@ -1,0 +1,376 @@
+<div style="text-align: center;"><span style="color:#800080"><span style="font-size:36px">API Warranty</span></span></div>
+
+<div style="text-align: center;">&nbsp;</div>
+
+<div><strong><span style="color:#000080"><span style="font-size:20px">1. General Warranty API</span></span></strong></div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="font-size:16px">1.1 Get State List</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>getStateList(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{code =&gt; CODE , state =&gt; STATE } ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.2 Subname</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>Subname(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{id =&gt; ID, name =&gt; NAME }</div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="font-size:16px">1.3 Contact Filter List</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>searchContactList_user(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>[{ID =&gt;ID , contact inactive =&gt; TRUE | FALSE ,&nbsp; contact_type =&gt; CONTACT_TYPE , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , primary postal code , PRIMARY_POSTAL_CODE , primary state =&gt; PRIMARY_STATE}} ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.4 Order Product Class Warranty</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>Warranty class(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>[{ alacartclass { order id =&gt; ORDER_ID,&nbsp; order title =&gt; ORDER_TITLE},&nbsp; {warranty class { order id =&gt; ORDER_ID,&nbsp; order title =&gt; ORDER_TITLE} ]</div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="font-size:16px">1.5 Salesman List</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>getSalesmanList(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{active =&gt; TRUE | FALSE , SID =&gt; SID , UID =&gt; UID , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , middle_name =&gt; MIDDLE_NAME }]</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.6 Affiliate Agent List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getAffil_agentList(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>{AID =&gt; AID , UID =&gt; UID , aff_type =&gt; AFF_TYPE , active =&gt; TRUE|FALSE , company name =&gt; COMPANY_NAME , first_name =&gt; FIRST_NAME , last name =&gt; LAST_NAME, primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , primary state =&gt; PRIMARY_STATE , salesperson =&gt; SALESPERSON , total =&gt; TOTAL , update time =&gt; UPDATE_TIME }</div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="font-size:16px">1.7 Affiliate Mortgage List</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>getAffil_mortgageList(</div>
+
+<div>&nbsp;</div>
+
+<div>return Json</div>
+
+<div>&nbsp;</div>
+
+<div>{AID =&gt;AID, UID =&gt; UID, active =&gt; ACTIVE, aff_type =&gt; AFF_TYPE, company name =&gt; COMPANY_NAME, first name =&gt; FIRST_NAME, last name =&gt; LAST_NAME, primary state =&gt; PRIMARY_STATE}) ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.8 Affiliate Title List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getAffil_titleList(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{AID =&gt; AID , UID =&gt; UID , aff_type =&gt; AFF_TYPE, active = TRUE | FALSE , company name =&gt; COMPANY_NAME, first name =&gt; FIRST_NAME, last name =&gt; LAST_NAME, primary state =&gt; PRIMARY_STATE }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.9 Charity Choice List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>charityofChoiceList(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{ID =&gt; ID, name =&gt; NAME, active =&gt; ACTIVE}</div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="color:#000080"><span style="font-size:20px">2. Create Warranty</span></span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>addWarranty(</div>
+
+<div>&nbsp;</div>
+
+<div>[{warranty address =&gt; array {address 1,&nbsp; address 2,&hellip;} ,warranty buyer id =&gt; WARRANTY _BUYER_ID, warranty city =&gt;&nbsp; WARRANTY _CITY, warranty creation date =&gt; WARRANTY_CREATION_DATE, warranty email =&gt;&nbsp; WARRANTY _EMAIL, warranty end date =&gt; WARRANTY_END_DATE, warranty escrow id =&gt; WARRANTY_ESCROW_ID, warranty inactive =&gt; TRUE|FALSE, warranty length =&gt;&nbsp; WARRANTY_LENGTH, warranty mortgage id =&gt; WARRANTY_MORTGAGE_ID, {warranty notes =&gt; array{ note 1, note 2,&hellip;}, warranty&nbsp; order id&rsquo; =&gt; WARRANTY_ORDER_ID, warranty phone =&gt; WARRANTY_PHONE,&nbsp; warranty postal code =&gt; WARRANTY_POSTAL_CODE, warranty renewal =&gt; WARRANTY_RENEWAL, warranty salesman id =&gt; WARRANTY_SALESMAN_ID,&nbsp; warranty seller agent id =&gt; WARRANTY_SELLER_AGENT_ID, warranty serial number =&gt; WARRANTY_SERIAL&not;_NUMBER, warranty start date =&gt; WARRANTY_START_DATE, warranty state =&gt; WARRANTY_STATE, warranty update by =&gt; WARRANTY_UPDATE_BY, warranty update date =&gt; WARRANTY_UPDATE_DATE, warranty charity of choice =&gt; WARRANTY_CHARITY_OF_CHOICE, warranty closing date =&gt;&nbsp; WARRANTY_CLOSING_DATE, warranty contract amount =&gt; WARRANTY_CONTRACT_AMOUNT, {note =&gt; array{ note 1, note 2,&hellip;}]</div>
+
+<div>&nbsp;</div>
+
+<div>Return result(json) for Ajax.</div>
+
+<div>&nbsp;</div>
+
+<div>Result: JSON{ Id|Success|Error, Message}</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#000080"><span style="font-size:20px"><strong>3. Edit Warranty</strong></span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.1 Warranty Get By ID</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getWarrantyByID(</div>
+
+<div>&nbsp;</div>
+
+<div>{ID =&gt; ID , notes =&gt; array { contact id =&gt; CONTACT_ID , create date =&gt; CREATE_DATE , note =&gt; NOTE , note id =&gt; NOTE_ID , type =&gt; TYPE , type id =&gt; TYPE_ID , warranty address 1 =&gt; WARRANTY_ADDRESS1 , warranty address 2 =&gt; WARRANTY_ADDRESS 2 , warranty buyer agent id =&gt; WARRANTY_BUYER_AGENT_ID , warranty buyer id =&gt; WARRANTY_BUYER_ID , warranty charity of choice =&gt; WARRANTY_CHARITY_OF_CHOICE , warranty city =&gt; WARRANTY_CITY , warranty claim limit =&gt; WARRANTY_CLAIM_LIMIT , warranty closing date =&gt; WARRANTY_CLOSING_DATE , warranty contract amount =&gt; WARRANTY_CONTRACT_AMOUNT , warranty creation date =&gt; WARRANTY_CREATION_DATE , warranty email =&gt; WARRANTY_EMAIL , warranty end date =&gt; WARRANTY_END_DATE , warranty escrow id =&gt; WARRANTY_ESCROW_ID , warranty inactive =&gt; TRUE | FALESE , warranty length =&gt; WARRANTY_LENGTH , warranty mortgage id =&gt; WARRANTY_MORTGAGE_ID , warranty notes =&gt; array {note 1 , note 2 ,&hellip;} , warranty order id =&gt; WARRANTY_ORDER_ID , warranty phone =&gt; WARRANTY_PHONE , = warranty postal code =&gt; WARRANTY_POSTAL_CODE , warranty renewal =&gt; WARRANTY_RENEWAL , warranty salesman id =&gt; WARRANTY_SALESMAN_ID , warranty seller agent id =&gt; WARRANTY_SELLER_AGENT_ID , warranty serial number =&gt; WARRANTY_SERIAL_NUMBER , warranty start date =&gt; WARRANTY_START_DATE , warranty state =&gt; WARRANTY_STATE , warranty update by =&gt; WARRANTY_UPDATE_BY , warranty update date =&gt; WARRANTY_UPDATE_DATE }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><span style="color:#000000"><strong>3.2 Order By ID Ship To Warranty</strong></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>getNotesByOrderID(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{order_id =&gt; ORDER_ID , balance =? BLANCE , bill_to =&gt; BILL_TO , payment =&gt; PAYMENT , total =&gt; TOTAL , warranty =&gt; WARRANTY }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.3 Get City Get By State</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getCityByState(</div>
+
+<div>&nbsp;</div>
+
+<div>{city =&gt; CITY , zip =&gt; ZIP }</div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="font-size:16px">3.4 Get Zip Code By City</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>{ zip =&gt; ZIP }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.5 Order Get By ID For Warranty</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>{ claim limit =&gt; array {graphics ui =&gt; GRAPHIC_UI , key =&gt; KEY&nbsp; , main =&gt; MAIN ,} , order =&gt; array {order id =&gt; ORDER_ID ,&nbsp; total =&gt; TOTAL , products&nbsp; = array { discount =&gt; DISCOUNT , discount type =&gt; DISCOUNT_TYPE , id =&gt; ID , line total =&gt;&nbsp; LINE_TOTAL&nbsp; , price =&gt; PRICE , prod class =&gt; PROD_CLASS ,&nbsp; prod name =&gt; PROD_NAME ,&nbsp; quantity =&gt; QUANTITY , sku =&gt; SKU }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.6 Update Warranty</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>updateWarranty(</div>
+
+<div>&nbsp;</div>
+
+<div>[{warranty address =&gt; array {address 1,&nbsp; address 2,&hellip;} ,warranty buyer id =&gt; WARRANTY _BUYER_ID, warranty city =&gt;&nbsp; WARRANTY _CITY, warranty creation date =&gt; WARRANTY_CREATION_DATE, warranty email =&gt;&nbsp; WARRANTY _EMAIL, warranty end date =&gt; WARRANTY_END_DATE, warranty escrow id =&gt; WARRANTY_ESCROW_ID, warranty inactive =&gt; TRUE|FALSE, warranty length =&gt;&nbsp; WARRANTY_LENGTH, warranty mortgage id =&gt; WARRANTY_MORTGAGE_ID, {warranty notes =&gt; array{ note 1, note 2,&hellip;}, warranty&nbsp; order id&rsquo; =&gt; WARRANTY_ORDER_ID, warranty phone =&gt; WARRANTY_PHONE,&nbsp; warranty postal code =&gt; WARRANTY_POSTAL_CODE, warranty renewal =&gt; WARRANTY_RENEWAL, warranty salesman id =&gt; WARRANTY_SALESMAN_ID,&nbsp; warranty seller agent id =&gt; WARRANTY_SELLER_AGENT_ID, warranty serial number =&gt; WARRANTY_SERIAL&not;_NUMBER, warranty start date =&gt; WARRANTY_START_DATE, warranty state =&gt; WARRANTY_STATE, warranty update by =&gt; WARRANTY_UPDATE_BY, warranty update date =&gt; WARRANTY_UPDATE_DATE, warranty charity of choice =&gt; WARRANTY_CHARITY_OF_CHOICE, warranty closing date =&gt;&nbsp; WARRANTY_CLOSING_DATE, warranty contract amount =&gt; WARRANTY_CONTRACT_AMOUNT, {note =&gt; array{ note 1, note 2,&hellip;}]</div>
+
+<div>&nbsp;</div>
+
+<div>Return result(json) for Ajax.</div>
+
+<div>&nbsp;</div>
+
+<div>Result: JSON{ Id|Success|Error, Message}</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.7 Get Warranty BY ID</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getWarrantyByID(</div>
+
+<div>&nbsp;</div>
+
+<div>&lsquo;warranty address&rsquo; =&gt; array {address 1,&nbsp; address 2,&hellip;}, warranty buyer id =&gt; WARRANTY _BUYER_ID, warranty city =&gt;&nbsp; WARRANTY _CITY, warranty creation date =&gt; WARRANTY_CREATION_DATE,&nbsp; warranty email =&gt;&nbsp; WARRANTY _EMAIL, warranty end date =&gt; WARRANTY_END_DATE, warranty escrow id =&gt; WARRANTY_ESCROW_ID, warranty inactive =&gt; TRUE|FALSE, warranty length =&gt;&nbsp; WARRANTY_LENGTH warranty mortgage id =&gt; WARRANTY_MORTGAGE_ID, {warranty notes =&gt; array{ note 1, note 2,&hellip;}, warranty&nbsp; order id =&gt; WARRANTY_ORDER_ID, warranty phone =&gt; WARRANTY_PHONE, warranty postal code =&gt; WARRANTY_POSTAL_CODE, warranty renewal =&gt; WARRANTY_RENEWAL, warranty salesman id =&gt; WARRANTY_SALESMAN_ID,&nbsp; warranty seller agent id =&gt; WARRANTY_SELLER_AGENT_ID,&nbsp; warranty serial number =&gt; WARRANTY_SERIAL&not;_NUMBER, warranty start date =&gt; WARRANTY_START_DATE, warranty state =&gt; WARRANTY_STATE, warranty update by =&gt; WARRANTY_UPDATE_BY, warranty update date =&gt; WARRANTY_UPDATE_DATE, warranty charity of choice =&gt; WARRANTY_CHARITY_OF_CHOICE, warranty closing date =&gt;&nbsp; WARRANTY_CLOSING_DATE, warranty contract amount =&gt; WARRANTY_CONTRACT_AMOUNT, {notes =&gt; array{ note 1, note 2,&hellip;}</div>
+
+<div>&nbsp;</div>
+
+<div>Return result(json) for Ajax.</div>
+
+<div>&nbsp;</div>
+
+<div>Result: JSON{ Id|Success|Error, Message}</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.8 Warranty Number Existing</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>existingWarrantyNo(</div>
+
+<div>&nbsp;</div>
+
+<div>&lsquo;warranty serial number&rsquo; =&gt; WARRANTY_SERIAL_NUMBER,</div>
+
+<div>&nbsp;</div>
+
+<div>Return result(json) for Ajax.</div>
+
+<div>&nbsp;</div>
+
+<div>Result: JSON{ Id|Success|Error, Message}</div>
+
+<div>&nbsp;</div>
+
+<div><strong>3.9 Warranty Filter</strong></div>
+
+<div>&nbsp;</div>
+
+<div>searchWarrantyList(</div>
+
+<div>&nbsp;</div>
+
+<div>&lsquo;column&rsquo; =&gt; column,</div>
+
+<div>&nbsp;</div>
+
+<div>&lsquo;search all&rsquo; =&gt; SEARCH_ALL,</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>Result: JSON{ Id|Success|Error, Message}</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.10 Order By Id Ship To Warranty</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getNotesByOrderID(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{order_id =&gt; ORDER_ID , balance =? BLANCE , bill_to =&gt; BILL_TO , payment =&gt; PAYMENT , total =&gt; TOTAL , warranty =&gt; WARRANTY )</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.11 Claim By Warranty ID</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>GetClaimBYWarrantyId(</div>
+
+<div>&nbsp;</div>
+
+<div>{ id =&gt; ID , assign task =&gt; ASSIGN_TASK , contact name =&gt; CONTACT_NAME ,&nbsp; create by =&gt; CREATE_BY , create name =&gt; CREATE_NAME ,&nbsp; paid =&gt; PAID , start date =&gt; START_DATE , status =&gt; STATUS , transaction id =&gt; TRANSACTION_ID , warranty id =&gt; WARRANTY_ID }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.12 Warranty Limit Warranty ID&nbsp;</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getWarrantyLimit_WarrantID(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#000080"><span style="font-size:20px">4. Delete Warranty</span></span></div>
+
+<div>&nbsp;</div>
+
+<div>Delete func tion</div>
+
+<div>&nbsp;</div>
+
+<div>deleteWarranty(</div>
+
+<div>&nbsp;</div>
+
+<div>Return JSON(true|false, Message)</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><br />
+&nbsp;</div>

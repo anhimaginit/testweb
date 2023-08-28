@@ -1,0 +1,9 @@
+[
+   {"display" : "Sales", "value" : "Sales"},
+   {"display" : "Affiliate", "value" : "Affiliate"},
+   {"display" : "Customer", "value" : "Customer"},
+   {"display" : "Vendor", "value" : "Vendor"},
+   {"display" : "Employee", "value" : "Employee"},
+   {"display" : "Policy Holder", "value" : "PolicyHolder"},
+   {"display" : "System Admin", "value" : "SystemAdmin"}
+]

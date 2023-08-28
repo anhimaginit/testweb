@@ -1,0 +1,43 @@
+.box-signin {
+   max-width: 400px;
+   margin: auto;
+   padding: 30px;
+   border:1px solid #3a396163;
+   min-height: 300px;
+   background-color: #e4ecf663;
+}
+
+.box-signin .input-group-addon {
+   min-width: 100px;
+   background: var(--color-site);
+   color: var(--navigation);
+   text-align: left;
+}
+
+.box-signin .input-group{
+   margin-bottom: 10px;
+}
+
+.btn-signin{
+   padding:10px 20px;
+   margin:auto;
+   margin-top:8px;
+   width: 80%;
+   min-height: 50px;
+   display: block;
+}
+
+.btn-signin.btn-email{
+   background : #db4437;
+}
+
+.btn-signin.btn-email:hover, .btn-signin.btn-email.focus{
+   background : #a83b31;
+}
+
+.btn-signin img {
+   width: 30px;
+   height: auto;
+   margin-right:5px;
+   vertical-align: middle;
+}

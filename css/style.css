@@ -1,0 +1,111 @@
+.nav-link {
+   text-transform: uppercase;
+   font-weight: 450;
+   
+   color : darkslategray;
+   border-bottom: 2px white solid;
+}
+
+.nav-link:hover {
+   border-bottom: 2px darkred solid;
+   color: darkred;
+}
+
+#menubar {
+   box-shadow: 2px 2px 3px gray;
+   margin-bottom: 15px;
+}
+
+.text-center {
+   text-align: center;
+   margin: auto;
+}
+
+.banner {
+   width: 100%;
+   max-height: 300px;
+   height: auto;
+   overflow: hidden;
+}
+
+.upper {
+   text-transform: uppercase;
+}
+
+.bold {
+   font-weight: bold;
+}
+
+.border-bottom {
+   border-bottom: 1px gray solid;
+}
+
+.padding-5 {
+   padding: 5px;
+}
+
+.padding-10 {
+   padding: 10px;
+}
+
+.breadcrumbs span{
+   height: 0;
+   display: inline-block;
+   border-top: 20px solid transparent;
+   border-bottom: 20px solid transparent;
+   border-left: 20px solid !important;
+   margin: 0px 1px;
+   padding : 0px 10px;
+   background: darkred;
+   color : white;
+   text-align: center;
+}
+
+.breadcrumbs span:after{
+   height: 0;
+   display: inline-block;
+   border-top: 20px solid transparent;
+   border-bottom: 20px solid transparent;
+   border-left: 20px solid darkred;
+}
+
+.error, .strong{
+   color: rgb(235, 46, 46);
+}
+
+.input input.error, .select select.error, .checkbox input.error{
+   border-color: #b94a48;
+   background-color: #f2dede;
+}
+
+.form-group label, .form-check label {
+   font-weight: bold;
+}
+
+.label-head {
+   font-size: 28px;
+}
+
+.hidden {
+   display: none;
+}
+
+.decorator-darkred {
+   background: darkred;
+   color : white;
+}
+
+form footer {
+   margin-top : 15px;
+}
+
+.btn-bottom {
+   bottom: 0px;
+}
+
+
+table.dataTable tbody tr.group:hover
+{
+    background-color:red !important;
+}
+

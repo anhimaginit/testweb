@@ -1,0 +1,73 @@
+<div style="box-sizing: border-box; font-family: &quot;Open Sans&quot;, Arial, Helvetica, sans-serif; text-align: center;"><code><span style="color:rgb(75, 0, 130)"><span style="font-size:36px">API Dashboard</span></span></code></div>
+
+<div style="box-sizing: border-box; font-family: &quot;Open Sans&quot;, Arial, Helvetica, sans-serif;">&nbsp;</div>
+
+<div style="box-sizing: border-box; font-family: &quot;Open Sans&quot;, Arial, Helvetica, sans-serif;"><code><strong><span style="color:rgb(0, 0, 128)"><span style="font-size:20px">1. General&nbsp; Dashboard API</span></span></strong></code></div>
+
+<div style="box-sizing: border-box; font-family: &quot;Open Sans&quot;, Arial, Helvetica, sans-serif;">&nbsp;</div>
+
+<div style="box-sizing: border-box; font-family: &quot;Open Sans&quot;, Arial, Helvetica, sans-serif;">
+<div style="box-sizing: border-box;"><code><strong><span style="font-size:16px">1.1 Dashboard Contact List</span></strong></code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>dashboardContactList(</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>[{ID =&gt;ID , contact inactive =&gt; TRUE | FALSE ,&nbsp; contact_type =&gt; CONTACT_TYPE , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , primary postal code , PRIMARY_POSTAL_CODE , primary state =&gt; PRIMARY_STATE}} ;&nbsp;&nbsp;</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code><strong><span style="font-size:16px">1.2 Dashboard List Grps</span></strong></code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>[{id =&gt; ID , department =&gt; DEPARTMENT , group name =&gt; GROUP_NAME , parent gr group =&gt; PARENT_GR_GROUP , parent group =&gt; PARENT_GROUP , parent id =&gt; PARENT_ID , parent name =&gt; PARENT_NAME , role =&gt; ROLE , { user name {id =&gt; ID , name =&gt; NAME }auth =&gt; AUTH , error =&gt; ERROR , groups =&gt; GROUPS }]</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code><span style="font-size:16px"><strong>1.3 Dashboard Order List</strong></span></code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>dashboardOderList(</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>{ b id =&gt; B_ID , b name =&gt; B_NAME , b primary city =&gt; B_PRIMARY_CITY ,&nbsp; b primary email =&gt; B_PRIMARY_EMAIL&nbsp; ,&nbsp; b primary phone =&gt; B_PRIMARY_PHONE ,&nbsp; b primary state =&gt; B_PRIMARY_STATE ,&nbsp; balance =&gt; BALANCE ,&nbsp; create time =&gt; CREATE_TIME , order id =&gt; ORDER_ID , payment =&gt; PAYMENT , s id =&gt; S_ID , s name =&gt; S_NAME , s primary city =&gt; S_PRIMARY_CITY , s primary email =&gt; S_PRIMARY_EMAIL , s primary phone =&gt; S_PRIMARY_PHONE , s primary state =&gt; S_PRIMARY_STATE}</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code><span style="font-size:16px"><strong>1.4 Dashboard Warranty List</strong></span></code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>{ id =&gt; ID , b id =&gt; B_ID , b name =&gt; B_NAME , b primary city =&gt; B_PRIMARY_CITY ,&nbsp; b primary email =&gt; B_PRIMARY_EMAIL&nbsp; ,&nbsp; b primary phone =&gt; B_PRIMARY_PHONE ,&nbsp; b primary state =&gt; B_PRIMARY_STATE ,&nbsp; balance =&gt; BALANCE ,&nbsp; buyer =&gt; BUYER , create time =&gt; CREATE_TIME , order id =&gt; ORDER_ID , payment =&gt; PAYMENT ,&nbsp; s id =&gt; S_ID , S_NAME , s primary city =&gt; S_PRIMARY_CITY , s primary email =&gt; S_PRIMARY_EMAIL , s primary phone =&gt; S_PRIMARY_PHONE , s primary state =&gt; S_PRIMARY_STATE ,&nbsp; salesman&nbsp; =&gt; SALESMAN , total =&gt;&nbsp; TOTAL , warranty =&gt; WARRANTY , warranty address 1 =&gt; WARRANTY_ADDRESS 1 , warranty creation date =&gt; WARRANTY_CREATION_DATE , warranty end date =&gt; WARRANTY_END_DATE , warranty order id =&gt; WARRANTY_ORDER_ID , warranty start date =&gt; WARRANTY_START_DATE }</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code><span style="font-size:16px"><strong>1.5&nbsp;Dashboard&nbsp; Invoice&nbsp; List</strong></span></code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>dashboardInvoiceList(</code></div>
+
+<div style="box-sizing: border-box;"><code>{id =&gt; ID , balance =&gt; BALANCE , create time =&gt; CREATE_TIME , customer =&gt; CUSTOMER , customer name =&gt; CUSTOMER_NAME , invoiced =&gt; INVOICED , order id =&gt; ORDER_ID , payment =&gt; PAYMENT , sale name =&gt; SALE_NAME , sales person =&gt; SALES_PERSON , total =&gt; TOTAL , update time =&gt; UPDATE_TIME }</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code><span style="font-size:16px"><strong>1.6&nbsp;Dashboard Order Paid Open&nbsp;</strong></span></code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>{ order close =&gt; ORDER_CLOSE , order open =&gt; ORDER_OPEN , order total =&gt; ORDER_TOTAL }</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>1.5 DashboardGprtaks</code></div>
+
+<div style="box-sizing: border-box;">&nbsp;</div>
+
+<div style="box-sizing: border-box;"><code>{actionset =&gt; ACTIONSET , assign id =&gt; ASSIGN_ID , create date =&gt; CREATE_DATE , cus name =&gt; CUS_NAME , customer id =&gt; CUSTOMER_ID , done date =&gt; DONE_DATE , due date =&gt; DUE_DATE , duration = &gt; DURATION , id =&gt; ID , status =&gt; STATUS , task name =&gt; TASK_NAME , time =&gt; TIME}</code></div>
+</div>

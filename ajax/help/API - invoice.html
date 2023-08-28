@@ -1,0 +1,123 @@
+<div style="text-align: center;"><span style="color:#800080"><span style="font-size:48px">API- Invoice</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#4B0082"><span style="font-size:18px">1. General Invoice API</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.1 Contact Filter List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>searchContactList_user(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>[{ID =&gt;ID , contact inactive =&gt; CONTACT_INACTIVE , contact_type =&gt; CONTACT_TYPE , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , primary postal code , PRIMARY_POSTAL_CODE , primary state =&gt; PRIMARY_STATE}] ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.2 Salesman List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getSalesmanList(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{active =&gt; TRUE | FALSE , SID =&gt; SID , UID =&gt; UID , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , middle_name =&gt; MIDDLE_NAME }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#4B0082"><span style="font-size:18px"><strong>2. Create Invoice</strong></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>Adding Invoice(</div>
+
+<div>&nbsp;</div>
+
+<div>{balance =&gt; BALANCE , customer =&gt; CUSTOMER , invoice id =&gt; INVOICE_ID , order id =&gt; ORDER_ID , payment =&gt; PAYMENT , salesperson&nbsp; =&gt; SALESPERSON , total =&gt; TOTAL , ledger =&gt; [{ledger 1, ledger 2,&hellip;}] , notes&nbsp; =&gt; [{note 1, note 2,&hellip;}] }</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>Result: JSON{ Success|Error, Message,ID=&gt;ID}</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#4B0082"><span style="font-size:18px"><strong>3. Edit Invoice</strong></span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.1 Contact Filter List&nbsp;</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:14px"><span style="font-family:arial,helvetica,sans-serif"><span style="color:rgb(0, 0, 0)">searchInvoiceList(</span></span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:14px">Json return</span></div>
+
+<div>&nbsp;</div>
+
+<div>[{ID =&gt;ID , contact_type =&gt; CONTACT_TYPE , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , primary city =&gt; PRIMARY_CITY , primary ema<span style="font-family:arial,helvetica,sans-serif">il =&gt; PRIMARY_</span>EMAIL , primary phone =&gt; PRIMARY_PHONE , primary postal code , PRIMARY_POSTAL_CODE , primary state =&gt; PRIMARY_STATE}] ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.2 Invoice Get By Id</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getNotesByInvoiceID(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{ID =&gt;ID , balance =&gt; BALANCE , customer =&gt; CUSTOMER , invoiceid =&gt; INVOICEDn , order_id =&gt; ORDER_ID , payment =&gt; PAYMENT, company name =&gt; COMPANY_NAME , contact type =&gt; CONTACT_TYPE, =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , create time =&gt; CREATE_TIME , primary state =&gt; PRIMARY_STATE, ledger=&gt; [{id =&gt; ID , order id =&gt; ORDER_ID , credit =&gt; CREDIT , payment note =&gt; PAYMENT_NOTE , type =&gt; TYPE }] ,&nbsp; notes =&gt; [{note id =&gt; NOTE_ID , contact id =&gt; CONTACT_ID, type id =&gt; TYPE_ID , create date =&gt; CREATE_DATE , type =&gt; TYPE}] , order id =&gt; ORDER_ID , payment =&gt; PAYMENT, id =&gt; ID , company name =&gt; COMPANY_NAME , contact type =&gt; CONTACT_TYPE , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE first_name =&gt; FIRST_NAME , last name =&gt; LAST_NAME , primary state =&gt; PRIMARY_STATE}</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.3 Order Id By Ship To</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>{order_id =&gt; ORDER_ID , balance =&gt; BALANCE , bill_to =&gt; BILL_TO , payment =&gt; PAYMENT , total =&gt; TOTAL , warranty =&gt; WARRANTY } ;</div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="font-size:16px">3.4 Order Get By Id for Invoice</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>{ID =&gt; ID , balance =&gt; BALANCE , customer =&gt; CUSTOMER , invoiceid =&gt; INVOICED , order_id =&gt; ORDER_ID , payment =&gt; PAYMENT , note =&gt; NOTE , bill to&nbsp; =&gt; BILL_TO , create time =&gt; CREATE_TIME , product ordered = [{ discount =&gt; DISCOUNT , discount type =&gt; DISCOUNT_TYPE , id =&gt; ID , line total =&gt; LINE_TOTAL , price =&gt; PRICE , prod class =&gt; PROD_CLASS , prod name =&gt; PROD_NAME , quantity =&gt; QUANTITY , sku =&gt; SKU }]&nbsp; , salesperson =&gt; SALESPERSON , ship to , SHIP_TO , total =&gt; TOTAL , warranty =&gt; WARRANTY } ;&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#4B0082"><span style="font-size:18px"><strong>4. Delete Invoice</strong></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>deleteInvoice(</div>
+
+<div>&nbsp;</div>
+
+<div>Return JSON(true|false, Message)</div>

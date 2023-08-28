@@ -1,0 +1,106 @@
+<h2>How to add or update claim</h2>
+
+<legend>Add Claim</legend>
+<figure>
+  <img src="./img/help/claim-start.png" class="img img-responsive img-help">
+  <figcaption>Start Claim</figcaption>
+</figure>
+<p>You need to select Customer, Warranty to start claim. Vendor is options</p>
+<p>Click on <button type="button" class="btn btn-sm btn-primary">Start Claim</button> to save</p>
+<p>After start, Claim is ready to use.</p>
+
+<legend>Update Claim</legend>
+<figure>
+  <img src="./img/help/claim-update.png" class="img img-responsive img-help">
+  <figcaption>Update Claim</figcaption>
+</figure>
+
+<p>After started claim, Some tasks will be automatic creation. You need to provide informations to complete claim</p>
+<table class="table" style="width:100%">
+  <thead>
+    <th style="width:150px">Field</th>
+    <th style="width:150px"></th>
+    <th>Descriptions</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="bold">Assigned</td>
+      <td>Select one</td>
+      <td>Select Assigned person, who manage and get responsibility for this claim</td>
+    </tr>
+    <tr>
+      <td class="bold">Start date</td>
+      <td>Date</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="bold">End date</td>
+      <td>Date</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="bold">Status</td>
+      <td>Select 1</td>
+      <td>Check claim status. After edit, if it not change, default it is changed from Open to In progress</td>
+    </tr>
+    <tr>
+      <td class="bold">Claim Assign Task</td>
+      <td></td>
+      <td>Tasks for claim. <br>To push new task, click on <button type="button" class="btn btn-primary">Add
+          Task</button> and fill infomations for new task</td>
+    </tr>
+    <tr>
+      <td class="bold">Quote</td>
+      <td>Quote Amount<br>Quote Number<br>Quote date<br>Approved Quote</td>
+      <td>Employee need to enter values for quote. Customer will Approve quote or Decline quote</td>
+    </tr>
+    <tr>
+      <td class="bold">Invoice</td>
+      <td>Invoice Amount<br>Invoice Number<br>Invoice date<br>Approved Invoice</td>
+      <td>Employee need to enter values for quote. Customer will Approve invoice or Decline invoice</td>
+    </tr>
+    <tr>
+      <td class="bold">Claim Limits</td>
+      <td></td>
+      <td>If you have control transaction permission for that claim, You can enter payout amount for the claim
+        limit.<br>If payout amount is larger than available, You need to override or contact to supervisor to
+        accept.<br>
+        Acctant will Approved pay or Decline pay for current payment</td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <figure>
+          <img src="./img/help/claim-override.png" class="img img-responsive img-help">
+          <figcaption>Override form</figcaption>
+        </figure>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<legend>Send mail</legend>
+<p>To send mail for assigned person, click on <button type="button" class="btn btn-sm btn-warning">Send mail</button> on
+  Note table</p>
+<figure>
+  <img src="./img/help/claim-mail-note.png" class="img img-responsive img-help">
+  <figcaption>Send mail in note table to assigned person</figcaption>
+</figure>
+
+<p>To send mail for assigned task person, click on <button type="button" class="btn btn-sm btn-success"><i
+      class="fa fa-envelope-o" aria-hidden="true"
+      title="Send the customer an email with the contractors info"></i></button> on Tasks table</p>
+
+<figure>
+  <img src="./img/help/claim-mail-task.png" class="img img-responsive img-help">
+  <figcaption>Send mail to assigned task person</figcaption>
+</figure>
+
+<p>To send decline mail for vendor, switch Quote or Invoice button and click on <button type="button"
+    class="btn btn-sm btn-default">Notify Vendor</button></p>
+<figure>
+  <img src="./img/help/claim-approve-or-decline.png" class="img img-responsive img-help">
+</figure>
+<figure>
+  <img src="./img/help/claim-mail-decline.png" class="img img-responsive img-help">
+  <figcaption>Send mail decline quote or invoice to vendor</figcaption>
+</figure>

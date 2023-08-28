@@ -1,0 +1,59 @@
+#take_screenshot_camera {
+   position:fixed;
+   top:50%;
+   right:0px;
+   z-index:10000;
+}
+
+.screenshot {
+   position: fixed;
+   right: 10px;
+   bottom: 5px;
+   display: inline;
+   border: 1px solid #ccc;
+   z-index: 100;
+   background: #ffffff4d;
+   padding: 5px;
+}
+
+.screenshot:empty{
+   display: none;
+}
+
+.screenshot div.screen-item+div {
+   padding-top: 5px;
+   margin-top: 5px;
+   border-top: 1px solid #ccc;
+}
+
+.screenshot img {
+   width: 200px;
+   cursor: zoom-in;
+}
+
+.screenshot .tool {
+   display: inline-block;
+}
+
+.screenshot i {
+   width: 25px;
+   height: 25px;
+   border: 1px solid #ccc;
+   display: block;
+   text-align: center;
+   /* vertical-align: middle; */
+   padding: 5px;
+   cursor: pointer;
+}
+
+.screenshot i+i {
+   margin-top:2px;
+}
+
+.screenshot i:hover {
+   box-shadow: 1px 1px 3px #ccc;
+}
+
+#previewScreenshotModal .modal-content img{
+   width:100%;
+}

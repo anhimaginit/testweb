@@ -1,0 +1,28 @@
+.btn-payment{
+   padding: 8px 16px;
+   /* color :  #a84c44; */
+   font-size: 18px;
+}
+
+.payment-methods input[type=radio]{
+   margin: 5px;
+   /* width:0px; */
+}
+
+.smart-form .inline-group .radio{
+   margin-right: unset;
+}
+
+.smart-form .payment-methods .radio{
+   padding-left:5px;
+}
+
+#payment_info table td, #payment_info table th {
+   padding: 6px 5px;
+}
+
+.credit-card_svg{
+   position:absolute;
+   left: 0px;
+   top: 0px; 
+}

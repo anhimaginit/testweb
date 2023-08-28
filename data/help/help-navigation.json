@@ -1,0 +1,54 @@
+{
+    "API": {
+        "title": "API",
+        "icon": "fa-folder-o",
+        "sub": {
+            "o_dashboard": {
+                "title": "Dashboard",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/API\/dashboard.html"
+            },
+            "o_warranty": {
+                "title": "Warranty",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/API\/warranty.html"
+            },
+            "o_contact": {
+                "title": "Contact",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/API\/contact.html"
+            },
+            "o_invoice": {
+                "title": "Invoice",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/API\/invoice.html"
+            },
+            "o_order": {
+                "title": "Order",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/API\/order.html"
+            },
+            "o_product": {
+                "title": "Product",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/API\/product.html"
+            },
+            "o_claim": {
+                "title": "Claim",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/API\/claim.html"
+            }
+        }
+    },
+    "Test Content": {
+        "title": "Test Content",
+        "icon": "fa-folder-o",
+        "sub": {
+            "o_new_brand_help": {
+                "title": "New Brand Help",
+                "icon": "fa-file-o",
+                "url": "#ajax\/help\/Test Content\/new_brand_help.html"
+            }
+        }
+    }
+}

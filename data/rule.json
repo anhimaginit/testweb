@@ -1,0 +1,8 @@
+[
+   {"display" : "User", "value" : "User"},
+   {"display" : "Member", "value" : "Member"},
+   {"display" : "Team Leader", "value" : "Leader"},
+   {"display" : "Administrator", "value" : "Admin"},
+   {"display" : "Manager", "value" : "Manager"},
+   {"display" : "Super Admin", "value" : "SuperAdmin"}
+]

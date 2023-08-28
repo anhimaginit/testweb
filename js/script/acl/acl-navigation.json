@@ -1,0 +1,72 @@
+{
+    "dashboard":{"title":"Dashboard"},
+    "administrator":{"title":"Admin", "sub":[
+        {"roles":{"title":"Roles", "sub": [{"role" : {"title":" Group Roles"}}, {"generalrole": {"title": "General Roles"}}]}},
+        {"state_manage":{"title":"State"}},
+        {"group":{"title":"Group","sub":[{"addgroup":{"title":"Add Group"}},{"listgroup":{"title":"Group List"}}]}},
+        {"billing":{"title":"Billing Template"}},
+        {"discount":{"title":"Discount","sub":[{"adddiscount":{"title":"Add Discount"}},{"discountlist":{"title":"Discount List"}},{"discountreport":{"title":"Discount Repport"}}]}},
+        {"merge" : {"title" : "Merge Duplication"}},
+        {"setting":{"title":"Setting"}}
+    ]},
+    "contact":{"title":"Contact", "sub":[
+        {"addcontact":{"title":"Add Contact"}},
+        {"listcontact":{"title":"Contact List"}},
+        {"reportcontact":{"title":"Contact Report"}}
+    ]},
+    "company":{"title":"Company", "sub":[
+        {"addcompany":{"title":"Add Company"}},
+        {"listcompany":{"title":"Company List"}},
+        {"reportcompany":{"title":"Company Report"}}
+    ]},
+    "product":{"title":"Product", "sub":[
+        {"addproduct":{"title":"Add Product"}},
+        {"listproduct":{"title":"Product List"}},
+        {"reportproducts":{"title":"Products Report"}}
+    ]},
+    "order":{"title":"Order", "sub":[
+        {"addorder":{"title":"Add Order"}},
+        {"listorder":{"title":"Order List"}},
+        {"reportorder":{"title":"Order Report"}}
+    ]},
+    "warranty":{"title":"Warranty", "sub":[
+        {"addwarranty":{"title":"Add Warranty"}},
+        {"editwarranty":{"title":"Add/Edit Warranty"}},
+        {"listwarranty":{"title":"Warranty List"}},
+        {"reportwarranty":{"title":"Warranty Report"}}
+    ]},
+    "invoice":{"title":"Invoice","sub":[
+        {"addinvoice":{"title":"Add Invoice"}},
+        {"listinvoice":{"title":"Invoice List"}},
+        {"reportinvoice":{"title":"Invoice Report"}}
+    ]},
+    "claim":{"title":"Claim","sub":[
+        {"addclaim":{"title":"Add Claim"}},
+        {"claimlimit":{"title":"Add/Update Claim Limit"}},
+        {"claimlist":{"title":"Claim List"}},
+        {"reportclaim":{"title":"Claim Report"}}
+    ]},
+    "import":{"title":"Import", "sub": [
+        {"importproduct" : {"title" : "Import Product"}},
+        {"importcontact" : {"title" : "Import Contact"}}
+    ]},
+    "task":{"title":"Task","sub":[
+        {"addtask":{"title":"Add Task"}},
+        {"tasklist":{"title":"Task List"}},
+        {"tasktemplate":{"title":"Task Template"}}
+    ]},
+    "help":{"title":"Help Desk","sub":[
+        {"help_page":{"title":"Help Content"}},
+        {"helpfiles":{"title":"Help Files"}},
+        {"helpcreatecontent":{"title":"Create Help Content"}},
+        {"issueticket":{"title":"Issue Ticket"}},
+        {"ticketlist":{"title":"Ticket List"}}
+    ]},
+    "mail":{"title":"Mail","sub":[
+        {"compose":{"title":"Compose"}},
+        {"inbox":{"title":"Inbox"}},
+        {"sent":{"title":"Sent"}},
+        {"drafts":{"title":"Drafts"}},
+        {"sms_compose":{"title":"SMS Compose"}}
+    ]}
+}

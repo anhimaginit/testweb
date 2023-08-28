@@ -1,0 +1,135 @@
+<h2>how to add or update invoice</h2>
+
+<legend></legend>
+<figure>
+  <img src="./img/help/invoice-form.png" class="img img-responsive img-help">
+  <figcaption>Fill on invoice form</figcaption>
+</figure>
+<table class="table" style="width:100%">
+  <thead>
+    <th style="width:250px" colspan="2">Field</th>
+    <th style="width:150px"></th>
+    <th>Descriptions</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="bold" rowspan="4">Invoice</td>
+      <td class="bold">Invoice Number</td>
+      <td>Number</td>
+      <td>Enter invoice number. The invoice number must be unique in system. When you enter invoice, system will check
+        valid invoice number.</td>
+    </tr>
+    <tr>
+      <td class="bold">Customer</td>
+      <td>Select one</td>
+      <td>Search customer who pay this invoice. When choose customer, the order will be get this customer order.</td>
+    </tr>
+    <tr>
+      <td class="bold">Salesperson</td>
+      <td>Select one</td>
+      <td>Select salesperson</td>
+    </tr>
+    <tr>
+      <td class="bold">Order</td>
+      <td>Select one</td>
+      <td>Select order need to pay for the invoice</td>
+    </tr>
+    <tr>
+      <td class="bold" colspan="2">Order infomation</td>
+      <td>Table</td>
+      <td>Table show products in order.<br>Beside, show total payment amount, balance, some fee transaction (if
+        valid),...</td>
+    </tr>
+    <tr>
+      <td class="bold" colspan="2">Ledger</td>
+      <td>Table</td>
+      <td>Table show ledger paid by that invoice</td>
+    </tr>
+    <tr>
+      <td class="bold" colspan="2">Schedule Payments</td>
+      <td>Table</td>
+      <td>Table will show next schedule payment.<br>To confirm pay, click on <i
+          class="fa fa-check-circle-o text-success" style="font-size:20px"></i></td>
+    </tr>
+    <tr>
+      <td colspan="4"><img src="./img/help/invoice-history.png" class="img img-responsive"></td>
+    </tr>
+    <tr>
+      <td class="bold" colspan="2">Historical Payments</td>
+      <td>Table</td>
+      <td>If the order have other invoice and paid at least 1 time, History Payment table will show them.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To save invoice as PDT file, click on <a class="btn btn-default"><i class="fa fa-file-pdf-o text-danger"></i> Save
+    Invoice as PDF</a> on the top right form</p>
+<p>To prine invoice, click on <a class="btn btn-default"><i class="fa fa-print"></i> Print Invoice</a> on the top right
+  form</p>
+
+<p>Template Print</p>
+<figure>
+  <img src="./img/help/invoice-print.png" style="border: 1px solid lightgray" class="img img-responsive img-help">
+</figure>
+
+<p>After fill, click on <button type="button" class="btn btn-sm btn-primary">Submit</button> to save</p>
+
+<h2>How to add payment</h2>
+<legend></legend>
+
+<figure>
+  <img src="./img/help/invoice-add-payment.png" class="img img-responsive img-help">
+  <figcaption>Add payment form</figcaption>
+</figure>
+
+<h4>Step by Step</h4>
+<p>
+  <b>Step 1:</b>
+  <div>Click on button <button type="button" class="btn btn-primary">Add Payment</button> in invoice form</div>
+</p>
+
+<p>
+  <b>Step 2:</b>
+  <div>Fill on payment form and submit</div>
+  <table class="table" style="width:100%">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th></th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+  
+      <tr>
+        <td class="bold">Method</td>
+        <td>Select One</td>
+        <td>Select payment method<br>
+          Includes: Cash, Check, Acct and CC
+        </td>
+      </tr>
+      <tr>
+        <td class="bold">Payment Amount</td>
+        <td>Number</td>
+        <td>Enter the payment amount which you want to pay that time.<br>
+          If the payment amount is larger than balance, You need to choose one of following types:
+          <li><strong>Add Overage to Acct</strong> to accept payment with amount larger than balance, then the larger part would be
+            called
+            Overage </li>
+          <li><strong>Adjust Payment</strong> to fill the balance to pay that time.</li>
+          <li><strong>Cancel</strong> to cancel operation</li>
+        </td>
+      </tr>
+      <tr>
+        <td class="bold">Note</td>
+        <td>Text</td>
+        <td>Enter your note for the payment</td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+
+<p>
+  <b>Step 3:</b>
+  <div>Click on button <button type="button" class="btn btn-primary">Submit</button> to save Invoice form</div>
+</p>

@@ -1,0 +1,179 @@
+<div style="text-align: center;">&nbsp;</div>
+
+<div style="text-align: center;"><span style="color:#800080"><span style="font-size:48px">API Order</span></span></div>
+
+<div><span style="color:#4B0082"><strong><span style="font-size:18px">1. General API Order</span></strong></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.1 Get State</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getStateList(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>[{code =&gt; CODE , state =&gt; STATE ,]}&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.2 Contact Filter List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>searchContactList_user(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>[{ID =&gt;ID , contact inactive =&gt; TRUE | FALSE ,&nbsp; contact_type =&gt; CONTACT_TYPE , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , primary postal code , PRIMARY_POSTAL_CODE , primary state =&gt; PRIMARY_STATE}} ;</div>
+
+<div>&nbsp;</div>
+
+<div><strong><span style="font-size:16px">1.3 Get tag</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>Get tag(</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>{ imagine =&gt; IMAGINE , it =&gt; IT , solutions =&gt; SOLUTIONS , employee =&gt; EMPLOYEE , my test =&gt; MY_TEST , operation =&gt; OPERATION , mortgage =&gt; MORTGAGE , electronic =&gt; ELECTRONIC , solution =&gt; SOLUTION , sales =&gt; SALES , ha =&gt; HA , noi =&gt; NOI , vendor =&gt; VENDOR , foundation =&gt; FOUNDATION , co =&gt; CO, kremsy =&gt; KREMSY , kodimo =&gt; KODIMO }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.4 Contact Get List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>{ id =&gt; ID, first name =&gt; FIRST_NAME, last name =&gt; LAST_NAME, primary city =&gt; PRIMARY_CITY, primary state =&gt; PRIMARY_STATE }</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>1.5&nbsp; Salesman List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>getSalesmanList();</div>
+
+<div>Json return</div>
+
+<div>{active =&gt; TRUE | FALSE , SID =&gt; SID , UID =&gt; UID , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , middle_name =&gt; MIDDLE_NAME }]</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#4B0082"><span style="font-size:18px"><strong>2. Create Order</strong></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>addOrder(</div>
+
+<div>&nbsp;</div>
+
+<div>{value array =&gt; VALUE_ARRAY ,&nbsp; balance =&gt; BALANCE ,&nbsp; bill to =&gt; BILL_TO ,&nbsp; note =&gt;&nbsp; NOTE ,&nbsp; payment =&gt; PAYMENT , ship to&nbsp; =&gt; SHIP_TO ,&nbsp; salesperson =&gt; SALESPERSON ,&nbsp; total&nbsp; =&gt; TOTAL ,&nbsp; warranty =&gt; WARRANTY , notes=&gt;&nbsp; [{note 1, note 2,&hellip;}]</div>
+
+<div>&nbsp;</div>
+
+<div>Return result(json) for Ajax.</div>
+
+<div>&nbsp;</div>
+
+<div>Result: JSON{ Id|Success|Error, Message}</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:18px"><span style="color:#4B0082"><strong>3. Edit Order</strong></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>getOrderID(order_id =&gt; ORDER_ID);</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.1 Order Get By Id</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:14px"><strong>3.1a Order</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>{b ID =&gt;B_ID ,&nbsp; b first_name =&gt; B_FIRST_NAME , b last_name =&gt; B_LAST_NAME , notes = array { contact id =&gt; CONTACT_ID , create date =&gt; CREATE_DATE , note =&gt; NOTE , note id =&gt; NOTE_ID , type =&gt; TYPE , type id =&gt; TYPE_ID} , order id =&gt; ORDER_ID , payment =&gt; PAYMENT , s id =&gt; S_ID , first_name =&gt; FIRST_NAME , last_name =&gt; LAST_NAME , salesperson =&gt; SALESPERSON , sh id =&gt; SH_ID , first_name =&gt; FIRST_NAME , last_name&nbsp; TOTAL , warranty =&gt; WARRANTY ,}} ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:14px"><strong>3.1b Product</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>{id =&gt; ID , price =&gt; PRICE, sku =&gt;SKU, quantity =&gt; QUANTITY , prod_class =&gt; PRODUCT_CLASS , product name =&gt; PRODUCT_NAME ,&nbsp; discount =&gt; DISCOUNT, discount type =&gt; DISCOUNT_TYPE , line total =&gt; LINE_TOTAL }</div>
+
+<div>3.2 Product Get By Id</div>
+
+<div>{ID =&gt; ID , SKU =&gt; SKU , prod class =&gt; PROD_CLASS , prod cost =&gt; PRO_COST , prod desc =&gt; PROD_DESC , prod desc short =&gt; PROD_DESC_SHORT , prod height =&gt; PROD_HEIGHT , prod inactive =&gt; TRUE| FALSE , prod length =&gt; PROD_LENGTH , prod_name =&gt; PROD_NAME , prod_desc }} ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.3 Update Order</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>updateOrder(</div>
+
+<div>&nbsp;</div>
+
+<div>{ oeder id =&gt; ORDER_ID , value array =&gt; VALUE_ARRAY ,&nbsp; balance =&gt; BALANCE ,&nbsp; bill to =&gt; BILL_TO ,&nbsp; note =&gt;&nbsp; NOTE ,&nbsp; payment =&gt; PAYMENT , ship to&nbsp; =&gt; SHIP_TO ,&nbsp; salesperson =&gt; SALESPERSON ,&nbsp; total&nbsp; =&gt; TOTAL ,&nbsp; warranty =&gt; WARRANTY , notes=&gt;&nbsp; [{note 1, note 2,&hellip;}],&nbsp; }</div>
+
+<div>3/Return result(json) for Ajax.</div>
+
+<div>Result: JSON{ Id|Success|Error, Message</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:16px"><strong>3.4&nbsp;Order Filter List</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>&lsquo;column&rsquo; =&gt; column,</div>
+
+<div>&nbsp;</div>
+
+<div>&lsquo;search all&rsquo; =&gt; SEARCH_ALL,</div>
+
+<div>&nbsp;</div>
+
+<div>Json return</div>
+
+<div>&nbsp;</div>
+
+<div>{ID =&gt; ID , name =&gt; NAME , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , primary state =&gt; PRIMARY_STATE , order_id , =&gt; ORDER_ID , balance =&gt; BALANCE , create time =&gt; CREATE_TIME , payment =&gt; PAYMENT , ,ID =&gt; ID , name =&gt; NAME , primary city =&gt; PRIMARY_CITY , primary email =&gt; PRIMARY_EMAIL , primary phone =&gt; PRIMARY_PHONE , primary state =&gt; PRIMARY_STATE , total =&gt; TOTAL , warranty =&gt; WARRANTY }} ;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:18px"><strong>4. Delete Order</strong></span></div>
+
+<div>&nbsp;</div>
+
+<div>Delete Function</div>
+
+<div>&nbsp;</div>
+
+<div>deleteOder(</div>
+
+<div>&nbsp;</div>
+
+<div>Return JSON(true|false, Message)</div>
+
+<div>&nbsp;</div>

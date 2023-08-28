@@ -1,0 +1,79 @@
+<?php
+require('inf/isdk.php');
+$INFApp = new iSDK;
+$INFApp->cfgCon("ri357");
+
+
+$db = "freedomhw_crm_production";
+$dbhost = "35.238.134.226";
+$dbuser = "freedom-crm-web";
+$dbpass = "FreedomIsKey!";
+// Create connection
+$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+
+
+	echo "<pre>";
+ 
+		//print_r($notes_return);
+
+	echo "</pre>";
+
+//return 0;
+$i=0;
+
+
+
+                 $table = 'Contact';
+                  $limit = 1000;
+                  $page = 4;
+                  $fieldName = 'LastUpdated';
+                  $query = array('LastUpdated' => '~<~ 2020-01-01 00:00:00');
+                  $returnFields = array('Id','LastName','FirstName','MiddleName','Email','StreetAddress1','StreetAddress2', 'City','Sta$
+
+        
+	LastName$contact_return = $INFApp->dsQuery($table, $limit, $page, $query, $returnFields);
+
+	echo "<pre>";
+ 		//print_r($contact_return);
+	echo "</pre>";
+
+
+        $sql  = "SELECT * FROM `mytable2` LIMIT 25 OFFSET 100;";
+       // echo "<br/>". $note[ContactId] . " - " . $note[Id];
+        $result = mysqli_query($conn, $sql);
+
+echo mysqli_num_rows($result);
+
+//for ($x = 0; $x <= mysqli_num_rows($result); $x++) {
+
+for ($x=0; $x < mysqli_num_rows($result); $x++){
+	echo  '<br> hello - ' . $x;
+}
+
+$time_create = 'Nothing';
+
+foreach ($result  as $note) {
+        echo "<pre>";
+                print_r ($note);
+        echo "</pre>";
+
+
+	$sql_cont = "SELECT `ID`,`archive_id` FROM `contact` WHERE `archive_id` LIKE '" . $note['contactID'] . "';";
+	echo "<br> " . $sql_cont;
+	$cont_result = mysqli_query($conn, $sql_cont);
+
+	print_r($cont_result);
+
+	        $sql = "INSERT INTO `orders_temp`(`order_title`, `products_ordered`, `balance`, `bill_to`, `createTime`, `note`, `payment`, `salesperson`, `total`, `warranty`, `updateTime`, `subscription`, `discount_code`, `order_create_by`, `archive_id`)";
+                $sql .= "VALUES ('$note[Order_Title]',[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10],[value-11],[value-12],[value-13],[value-14],[value-15],[value-16])";
+                echo $sql. "<br>";
+
+                /*if (mysqli_query($conn, $sql)) {
+                        //echo "New record created successfully";
+                } else {
+                         echo "Error:  Note ID - " . $note[noteID] . " " . $sql . "<br>" . mysqli_error($conn);
+                }*/
+
+}
+
+?>
